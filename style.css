@@ -12,9 +12,10 @@
     transform: translate(-50%, -50%);
     max-width: 100%; /* Ensures the canvas does not exceed the width of its container */
     max-height: 100%; /* Ensures the canvas does not exceed the height of its container */
-
+    font-family: "Creepster", cursive;
 }
 
-#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_plant, #enemy_spider_big, #enemy_raven {
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_plant, #enemy_spider_big, #enemy_raven,
+ #fire, #collisionAnimation, #lives{
     display: none; /* Ensure this is intentional; if you want the image to be visible, change this */
 }

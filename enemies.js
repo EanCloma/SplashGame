@@ -90,10 +90,11 @@ export class ClimbingEnemy extends Enemy {
     }
 
     draw(context) {
+        if (this.game.debug) context.strokeRect(this.x, this.y, this.width, this.height); // Corrected strokeRect
         super.draw(context);
         context.beginPath();
         context.moveTo(this.x + this.width / 2, this.y + 50);
-        context.lineTo(this.x + this.width / 2, this.y + 50 );
+        context.lineTo(this.x + this.width / 2, this.y + this.height); // Adjusted for clarity
         context.stroke();
     }
-} 
+}
