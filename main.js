@@ -11,6 +11,12 @@ window.addEventListener('load', function () {
     canvas.width = 900;
     canvas.height = 500;
 
+    // Background Music
+    const backgroundMusic = new Audio('./Music/Background Music.mp3');
+    backgroundMusic.loop = true; // Enable looping
+    backgroundMusic.volume = 0.5; // Adjust volume (0.0 to 1.0)
+    backgroundMusic.play(); // Start playing when the game loads
+
     // Game Class
     class Game {
         constructor(width, height) {
